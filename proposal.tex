@@ -22,6 +22,12 @@
 %\usepackage{times} % assumes new font selection scheme installed
 %\usepackage{amsmath} % assumes amsmath package installed
 %\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage[final]{pdfpages}
+\usepackage{caption, rotating}
+\usepackage{graphics}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+
 
 \usepackage[T1]{fontenc}
  
@@ -143,6 +149,21 @@ guidelines for various parties.
 \section{PROLIMINARY LITERATUR REVIEW}
 
 \section{METHODLOGY}
+
+
+%\includepdf{schedule.pdf}
+\clearpage 
+\begin{figure}[hbt!]
+\centering
+        \includepdf[pages=1]{schedule.pdf}
+        \addvspace{250pt}
+        \hfill\hfill{50pt}
+        \rotatebox{90}{Figure~\thefigure: The schedule of the team for the research.}
+        %\caption{The Schedule of all tasks defined for the team.}
+\label{fig:schedule}
+\end{figure}
+
+\clearpage 
 
 \bibliography{biblio}
 \bibliographystyle{plain}
